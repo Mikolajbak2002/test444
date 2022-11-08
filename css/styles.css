@@ -562,6 +562,10 @@ img {
   padding: 12px 0 0 70px;
 }
 
+.newsletter-container {
+  padding: 12px 0 0 200px;
+}
+
 /*=============== Backdrop==============*/
 
 .modal {
