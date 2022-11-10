@@ -695,3 +695,38 @@ img {
   margin-left: 15px;
   --color1: currentColor;
 }
+
+.my-form {
+  display: flex;
+  /* position: absolute; */
+  padding: 12px 40px 20px;
+  width: 528px;
+  /* margin-left: 40px; */
+}
+
+.fieldset {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 448px;
+  border-radius: 4px;
+}
+
+.my-form .label {
+  position: absolute;
+  top: -34px;
+}
+
+.modal-title {
+  margin: 40px 40px;
+  text-align: center;
+}
+
+.my-form .input {
+  border: 0;
+  padding: 11px 0;
+}
+
+.icon-form {
+  margin-left: 12px;
+}
