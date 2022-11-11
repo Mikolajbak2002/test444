@@ -699,7 +699,6 @@ img {
 .my-form {
   display: flex;
   display: block;
-
   /* position: absolute; */
   padding: 12px 40px 20px;
   width: 528px;
@@ -727,9 +726,17 @@ img {
 
 .my-form .input {
   border: 0;
-  padding: 11px 0;
+  padding: 12px;
+  width: 100%;
 }
 
 .icon-form {
   margin-left: 12px;
+}
+
+.textarea {
+  border: 0;
+  padding: 12px 16px;
+  resize: none;
+  width: 100%;
 }
