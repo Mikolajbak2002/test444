@@ -705,18 +705,32 @@ img {
   width: 528px;
 }
 
+.my-form .input:focus,
+.my-form .textarea:focus {
+  outline: 0;
+}
+
 .fieldset {
   display: flex;
   position: relative;
   align-items: center;
   width: 448px;
+  border-style: solid;
   border-radius: 4px;
   margin-block: 30px;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fieldset:focus-within {
+  border-color: var(--brand-blue);
+  fill: var(--brand-blue);
 }
 
 .my-form .label {
   position: absolute;
-  top: -25px;
+  top: -35px;
+  font-size: 20px;
   color: var(--font-normal);
 }
 
@@ -732,6 +746,7 @@ img {
 
 .my-form .input {
   border: 0;
+  background-color: transparent;
   padding: 12px;
   width: 100%;
 }
