@@ -795,3 +795,22 @@ img {
   flex-direction: column;
   width: 448px;
 }
+
+.my-form .legal-checkbox {
+  position: static;
+}
+
+.legal-checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.conditionalfieldset {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.legal-checkbox:has(.legal-checkbox input:checked) .conditionalfieldset {
+  opacity: 1;
+  pointer-events: all;
+}
