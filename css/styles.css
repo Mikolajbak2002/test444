@@ -6,6 +6,7 @@
   --background-dark-eighty: #2f303acc;
   --backgroung-dark-transparent: #2f303a66;
   --font-normal: #757575;
+  --font-normal-modal: #75757580;
   --font-dark: #212121;
   --font-light: #ffffff;
   --font-black: #000000;
@@ -699,10 +700,9 @@ img {
 .my-form {
   display: flex;
   display: block;
-  /* position: absolute; */
-  padding: 12px 40px 20px;
+  padding-top: 10px;
+  margin-left: 40px;
   width: 528px;
-  /* margin-left: 40px; */
 }
 
 .fieldset {
@@ -717,10 +717,16 @@ img {
 .my-form .label {
   position: absolute;
   top: -25px;
+  color: var(--font-normal);
 }
 
 .modal-title {
-  margin-top: 30px;
+  font: Roboto;
+  font-weight: 700;
+  color: var(--font-black);
+  font-size: 20px;
+  line-height: 1.15%;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -731,7 +737,7 @@ img {
 }
 
 .icon-form {
-  margin-left: 12px;
+  margin: 4px 0 0 12px;
 }
 
 .textarea {
@@ -739,4 +745,38 @@ img {
   padding: 12px 16px;
   resize: none;
   width: 100%;
+  color: var(--font-normal-modal);
+}
+
+.legal-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.politic {
+  margin-bottom: 3px;
+}
+
+.btn-modal-activ {
+  width: 200px;
+  background-color: var(--brand-blue);
+  color: var(--font-light);
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  cursor: pointer;
+  font-family: inherit;
+  display: block;
+  padding: 11px 41px;
+  border: none;
+  border-radius: 4px;
+}
+
+.form-submit {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
 }
