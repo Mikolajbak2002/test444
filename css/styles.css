@@ -654,14 +654,14 @@ img {
 
 .newsletter-container {
   padding-top: 12px;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .newsletter-wraper {
   display: flex;
 }
 
-.newsletter-imput {
+.newsletter-input {
   background-color: var(--background-dark);
   padding: 15px 180px 15px 16px;
   border-radius: 4px;
@@ -729,8 +729,8 @@ img {
 
 .my-form .label {
   position: absolute;
-  top: -35px;
-  font-size: 20px;
+  top: -22px;
+  font-size: 12px;
   color: var(--font-normal);
 }
 
@@ -772,6 +772,7 @@ img {
 
 .politic {
   margin-bottom: 3px;
+  margin-left: 45px;
 }
 
 .btn-modal-activ {
@@ -812,21 +813,30 @@ img {
 .legal-checkbox .checkmark {
   position: absolute;
   width: 20px;
-  height: 20px;
-  border: 1px solid var(--font-dark);
-  left: 0;
-  top: -22px;
+  height: 19px;
+  box-shadow: 0px 0px 0px 2px var(--font-dark) inset;
+  border-radius: 2px;
+  left: 15px;
+  top: 0px;
 }
 
 .checkmark:after {
   content: "";
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' width='40' height='40'%3e%3ccircle cx='20' cy='20' r='20' fill='none' stroke='%23aaa' stroke-width='2' /%3e%3c/svg%3e");
-  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='black' stroke-width='3' fill='red' /%3E%3C/svg%3E"); */
-  display: block;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 34 32' width='34' height='32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='%232196f3' d='M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z'/%3e%3cpath fill='%23fff' d='M8.442 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z'/%3e%3c/svg%3e");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  border: 1px solid red;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.legal-checkbox input:checked .checkmark:after {
+.legal-checkbox input:checked ~ .checkmark:after {
+  opacity: 1;
+}
+
+.legal-checkbox input:checked ~ .checkmark {
+  border-color: var(--background-white);
+  box-shadow: none;
 }

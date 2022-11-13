@@ -444,10 +444,11 @@
             </h3>
             <form class="newsletter-wraper">
               <input
-                class="newsletter-imput"
+                class="newsletter-input"
                 type="text"
                 placeholder="E-mail"
-                id="name"
+                id="newsletter"
+                name="Email"
               />
               <button class="newsletter-btn" type="submit">
                 Zapisz się<svg class="icon-news-footer" width="24" height="24">
@@ -468,28 +469,29 @@
             <svg class="icon-form" width="18" height="18">
               <use href="images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
-            <input class="input" type="text" id="name" />
+            <input class="input" type="text" id="name" name="Name" />
           </fieldset>
           <fieldset class="fieldset">
             <label class="label" for="phone">Telefon</label>
             <svg class="icon-form" width="18" height="18">
               <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
-            <input class="input" type="tel" id="phone" />
+            <input class="input" type="tel" id="phone" name="Phone" />
           </fieldset>
           <fieldset class="fieldset">
             <label class="label" for="email">Email</label>
             <svg class="icon-form" width="18" height="18">
               <use href="images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
-            <input class="input" type="email" id="email" />
+            <input class="input" type="email" id="email" name="Email" />
           </fieldset>
           <fieldset class="fieldset">
-            <label class="label"> Komentarz</label>
+            <label class="label" for="comment"> Komentarz</label>
             <textarea
               class="textarea"
               type="textarea"
-              name="Komentarz"
+              name="Comment"
+              id="comment"
               rows="4"
               placeholder="Wprowadź tekst"
             ></textarea>
@@ -518,12 +520,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-<label class="legal-checkboxx my-form">
-  <input type="checkbox" id="legal" />
-  Oświadczam iż akceptuję
-  <span class="checkmark"></span>
-</label>
-<fieldset class="fieldset conditionalFieldset">
-  <input class="textareaa" type="textarea" />
-</fieldset>
